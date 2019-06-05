@@ -2,7 +2,6 @@
 
 const http = require('http');
 const webdriver = require('selenium-webdriver')
-const local = new browserstack.Local()
 
 var capabilities = {
   'build': 'Docker example',
@@ -34,9 +33,7 @@ const server = http
         console.log(title)
       })
       driver.quit().then(function () {
-        local.stop(function () {
-          console.log('Stopped')
-        })
+        console.log('Stopped')
       })
     })   
   });
