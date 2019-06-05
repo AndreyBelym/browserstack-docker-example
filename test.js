@@ -7,7 +7,7 @@ var capabilities = {
   'build': 'Docker example',
   'browserName': 'chrome',
   'os': 'OS X',
-  'browserstack.local': true,
+  'browserstack.local': false,
   'browserstack.user': process.env.BROWSERSTACK_USERNAME,
   'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
 }
